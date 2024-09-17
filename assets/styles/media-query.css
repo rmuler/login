@@ -51,4 +51,12 @@ Grandes Telas: Aciam de 1200px
         width: 50%;
         height: 100%;
     }
+
+    article#formulario > h1 {
+        font-size: 2em;
+    }
+
+    article#formulario > p {
+        font-size: 1.2em;
+    }
 }

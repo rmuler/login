@@ -6,6 +6,7 @@
     <title>Tela de Login</title>
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -16,9 +17,21 @@
             <article id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça o login para acessar sua conta.</p>
-                <form action="login.php" method="post">
-                    <label for="iEmail">#</label>
-                    <input type="email" name="email" id="iEmail" placeholder="seu e-mail">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="iLogin" placeholder="Seu email" autocomplete="email" required maxlength="40">
+                        <label for="iLogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="iSenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="iSenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a Senha <i class="material-icons">mail</i>
+                    </a>
                 </form>
             </article>
         </section>
